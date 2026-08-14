@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo">MVELO FRESH FARM</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#products">Products</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#orders">Orders</a>
+            <a href="#delivery">Delivery Info</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </header>
+
+    
+    <section id="home" class="hero">
+        <h1>Welcome to Mvelo Fresh Farm</h1>
+        <p>We supply fresh vegetables, fruits and eggs to our local community at good prices.</p>
+        <br>
+        <a href="#orders" class="btn">Order Now</a>
+    </section>
+
+
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>Mvelo Fresh Farm is a small family business that started in our local community. Our main goal is to bring healthy food directly from our farm to your house.</p>
+        <p>We supply local families, individuals and small businesses like local restaurants who need fresh ingredients every day.</p>
+    </section>
+
+    
+    <section id="products" class="section gray-bg">
+        <h2>Our Products</h2>
+        
+        <div class="product-container">
+            <div class="card">
+                <h3>Fresh Vegetables</h3>
+                <p>Seasonal veggies harvested every morning.</p>
+                <p><b>Price:</b> R30 per kg</p>
+            </div>
+
+            <div class="card">
+                <h3>Fresh Fruit</h3>
+                <p>Sweet apples, oranges and bananas from our farm.</p>
+                <p><b>Price:</b> R40 per kg</p>
+            </div>
+
+            <div class="card">
+                <h3>Farm Eggs</h3>
+                <p>Fresh free-range eggs.</p>
+                <p><b>Price:</b> R60 per tray</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="gallery" class="section">
+        <h2>Gallery</h2>
+        <div class="gallery-container">
+            <img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcTsm9NooiEmptzBII_W631H5acq2jbEabFohdz9eHAGcof6NEtv53-yF3ta737qbpEt4vrUi4ABiHx_5G8" alt="Fresh Vegetables" width="200" height="150">
+            <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcS6RwdURK7KYQe1jVAEgiI2zwc8-rdhPqsa1B4PbkKzrEU4YM1wmr1QehjC25rJG2gEMs_hYQhJ16FIIV0" alt="Eggs" width="200" height="150">
+            <img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcQMpKETuJt8Ajx_NZEYeWeStCKodbBhQLDcOUSo0AZUNQe48uITsXqzAxIUHzrOlNi00TW-SABvZu3ahm8" alt="Fruit" width="200" height="150">
+        </div>
+    </section>
+
+    
+    <section id="orders" class="section gray-bg">
+        <h2>Place an Order</h2>
+        <form id="myOrderForm">
+            <label>Your Name:</label><br>
+            <input type="text" id="name" required><br><br>
+
+            <label>Phone Number:</label><br>
+            <input type="text" id="phone" required><br><br>
+
+            <label>Select Product:</label><br>
+            <select id="prod">
+                <option>Vegetables (R30)</option>
+                <option>Fruit (R40)</option>
+                <option>Eggs (R60)</option>
+            </select><br><br>
+
+            <label>Address & Notes:</label><br>
+            <textarea id="notes" rows="4"></textarea><br><br>
+
+            <input type="submit" value="Send Order" class="btn">
+        </form>
+    </section>
+
+    
+    <section id="delivery" class="section">
+        <h2>Delivery Information</h2>
+        <p>We deliver in the local area on Tuesdays and Fridays between 9am and 4pm.</p>
+        <ul>
+            <li>Minimum order amount: R150</li>
+            <li>Delivery cost: R35</li>
+            <li>Farm pickup is free during business hours!</li>
+        </ul>
+    </section>
+
+    
+    <section id="contact" class="section gray-bg">
+        <h2>Contact Us</h2>
+        <p>Phone: 011 555 0199</p>
+        <p>Email: info@mvelofreshfarm.co.za</p>
+        <p>Hours: Mon - Fri (7:30 - 17:00), Sat (8:00 - 13:00)</p>
+    </section>
+
+    
+    <footer>
+        <p>Copyright 2026 Mvelo Fresh Farm</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
