@@ -158,3 +158,69 @@ footer {
     padding: 15px;
     margin-top: 20px;
 }
+
+/* Tablet Layout (768px max width) */
+@media screen and (max-width: 768px) {
+    .section {
+        padding: 25px 15px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .product-container {
+        justify-content: center;
+    }
+
+    .card {
+        width: 45%;
+        min-width: 220px;
+    }
+
+    .gallery-container img {
+        max-width: 45%;
+        height: auto;
+    }
+}
+
+/* Mobile Layout (480px max width) */
+@media screen and (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    nav a {
+        display: block;
+        padding: 8px;
+        background-color: #256328;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .gallery-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-container img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #myOrderForm {
+        width: 100%;
+        padding: 15px;
+    }
+}
