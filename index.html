@@ -39,22 +39,27 @@
 
         <section id="products" class="section gray-bg">
             <h2>Our Products</h2>
-            <div class="product-container">
-                <article class="card">
+            
+            <div style="margin-bottom: 20px;">
+                <input type="text" id="productSearch" placeholder="Search products (e.g. fruit, eggs)..." style="padding: 10px; width: 280px; max-width: 90%; border: 1px solid #ccc; border-radius: 4px;">
+            </div>
+
+            <div class="product-container" id="productContainer">
+                <article class="card product-card" data-name="fresh vegetables">
                     <h3>Fresh Vegetables</h3>
                     <p>Seasonal veggies harvested every morning.</p>
                     <p><b>Price:</b> R30 per kg</p>
                     <button class="btn add-to-cart-btn" data-name="Fresh Vegetables" data-price="30">Add to Cart</button>
                 </article>
 
-                <article class="card">
+                <article class="card product-card" data-name="fresh fruit">
                     <h3>Fresh Fruit</h3>
                     <p>Sweet apples, oranges and bananas from our farm.</p>
                     <p><b>Price:</b> R40 per kg</p>
                     <button class="btn add-to-cart-btn" data-name="Fresh Fruit" data-price="40">Add to Cart</button>
                 </article>
 
-                <article class="card">
+                <article class="card product-card" data-name="farm eggs">
                     <h3>Farm Eggs</h3>
                     <p>Fresh free-range eggs.</p>
                     <p><b>Price:</b> R60 per tray</p>
