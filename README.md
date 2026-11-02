@@ -1,34 +1,45 @@
- Mvelo Fresh Farm — WEDE5020 Part 2
+Mvelo Fresh Farm — Project Documentation
 
-This is my Part 2 submission for Mvelo Fresh Farm. I updated the website from Part 1 by adding an external CSS file, fixing HTML structure mistakes, making forms accessible, and adding media queries so the site works on mobile, tablet, and desktop screens.
+Project Overview
+Mvelo Fresh Farm is an online retail store and community platform dedicated to providing fresh, organic, and locally grown produce (vegetables, fruit, and free-range farm eggs). This project showcases front-end web development, responsive styling, client-side interactivity, and basic SEO practices.
 
-What I Changed From Part 1 
 
- Created style.css and linked it in index.html. To separate HTML code from CSS styling rules. 
-Replaced div tags with main and article.  To fix HTML structure based on Part 1 lecturer feedback. 
- Connected form labels to inputs using for and id.  To make forms easier to use and accessible. 
- Added media queries for 768px and 480px screens.  To make the website layout adjust for phone and tablet screens. 
- Wrapped JavaScript in DOMContentLoaded.To stop the script from running before the web page finishes loading. 
-Fixed folder structure so files sit in the main folder.  To make sure CSS and image file paths load correctly without breaking. 
 
-Responsive Testing Screenshots
+Change Log
 
-I tested the website in Chrome Developer Tools on three different screen sizes:
+Part 3 Updates & Enhancements
+- Interactive Shopping Cart: Added "Add to Cart" buttons on products, a live cart counter badge, and an interactive checkout modal based on Part 2 lecturer feedback.
+- Gallery Lightbox: Implemented a full-screen image viewing lightbox when clicking on gallery photos.
+- Interactive Map: Integrated an open-source Leaflet map displaying the farm's location in South Africa.
+- Dynamic Content & Search: Added a live search input filter allowing users to instantly filter products on the home page.
+- Form Functionality & Validation: Created dedicated enquiry.html and contact.html forms with robust JavaScript client-side validation, error messaging, and automated cost/availability responses.
+- SEO Configuration: Added meta title/description tags, a robots.txt instructions file, and an XML sitemap (sitemap.xml) to optimize search engine crawling.
 
-1.Desktop View (1024px and up)
-[Desktop View](screenshots/desktop.png)
-Shows navigation at the top, hero text, and products side by side in three columns.
+Part 2 Feedback Corrections & Updates
+- Online Store Features: Addressed lecturer feedback by introducing shopping cart functionality and checkout buttons.
+- Code Refactoring: Cleaned up HTML structure and ensured all CSS and JavaScript files are properly linked and organized in the root directory.
 
-2.Tablet View (768px)
-[Tablet View](screenshots/tablet.png)
-Shows the product cards automatically fitting into two columns.*
 
-3.Mobile View (375px to 480px)
-[Mobile View](screenshots/mobile.png)
-Shows elements stacked vertically in a single column so it is easy to scroll on phones.
+
+Project Structure
+- index.html: Home page featuring hero section, products, live search, gallery lightbox, and location map.
+- enquiry.html: Enquiry form page for bulk orders and volunteer applications with automated processing.
+- contact.html: General contact page with mailto integration and client-side validation.
+- style.css: Global external stylesheet handling layout, responsiveness, modals, and forms.
+- script.js: JavaScript file managing cart logic, lightbox popup, map rendering, search filtering, and form validation.
+- robots.txt: Search engine crawler rules.
+- sitemap.xml: Site structure map for search engines.
+- images/: Directory containing product and gallery photos (vegetables.jpg, eggs.jpg, Fruits.jpg).
+- screenshots/: Directory containing evidence images for desktop, tablet, and mobile layouts.
+
+
+
+Deployment Link
+- Live Website URL: 
+
 
 
 References
-
-1.MDN Web Docs. Responsive design. Available at: https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design
-2.W3C. CSS Flexible Box Layout Module Level 1. Available at: https://www.w3.org/TR/css-flexbox-1/
+- OpenStreetMap Leaflet Documentation: https://leafletjs.com/
+- MDN Web Docs (JavaScript DOM Manipulation & Form Validation): https://developer.mozilla.org/
+- W3Schools HTML & CSS Reference: https://www.w3schools.com/
