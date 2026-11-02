@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mvelo Fresh Farm — Enquiries</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">MVELO FRESH FARM</div>
+        <nav aria-label="Main Navigation">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About Us</a>
+            <a href="index.html#products">Products</a>
+            <a href="index.html#gallery">Gallery</a>
+            <a href="enquiry.html" class="active">Enquiries</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main class="section">
+        <h2>Product & Service Enquiry Form</h2>
+        <p>Fill out the form below to enquire about bulk product prices, farm services, or volunteering opportunities.</p>
+
+        <form id="enquiryForm" action="#" method="POST" class="form-container" novalidate>
+            <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name">
+                <small class="error-msg" id="nameError"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="name@example.com">
+                <small class="error-msg" id="emailError"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="e.g. 0821234567">
+                <small class="error-msg" id="phoneError"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="enquiryType">Enquiry Type:</label>
+                <select id="enquiryType" name="enquiryType">
+                    <option value="">-- Select Option --</option>
+                    <option value="Vegetables">Bulk Vegetables Order</option>
+                    <option value="Fruit">Bulk Fruit Order</option>
+                    <option value="Eggs">Farm Eggs Supply</option>
+                    <option value="Volunteer">Volunteer Opportunities</option>
+                </select>
+                <small class="error-msg" id="typeError"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="quantity">Estimated Quantity (in kg / trays):</label>
+                <input type="number" id="quantity" name="quantity" min="1" placeholder="e.g. 10">
+                <small class="error-msg" id="quantityError"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Additional Details:</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Tell us more about your request..."></textarea>
+            </div>
+
+            <button type="submit" class="btn">Submit Enquiry</button>
+        </form>
+
+        <div id="enquiryResponse" class="response-box" style="display: none;"></div>
+    </main>
+
+    <footer>
+        <p>&copy; Mvelo Fresh Farm. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
