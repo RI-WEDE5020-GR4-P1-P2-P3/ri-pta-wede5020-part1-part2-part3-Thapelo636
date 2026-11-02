@@ -94,6 +94,24 @@ document.addEventListener('DOMContentLoaded', function () {
             .openPopup();
     }
 
+    const searchInput = document.getElementById('productSearch');
+    const productCards = document.querySelectorAll('.product-card');
+
+    if (searchInput) {
+        searchInput.addEventListener('input', function (e) {
+            const query = e.target.value.toLowerCase().trim();
+
+            productCards.forEach(card => {
+                const productName = card.getAttribute('data-name');
+                if (productName.includes(query)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    }
+
     const enquiryForm = document.getElementById('enquiryForm');
     if (enquiryForm) {
         enquiryForm.addEventListener('submit', function (e) {
